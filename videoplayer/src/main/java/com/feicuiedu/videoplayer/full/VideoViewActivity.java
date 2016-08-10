@@ -15,7 +15,6 @@ import java.util.Locale;
 
 import io.vov.vitamio.MediaPlayer;
 import io.vov.vitamio.Vitamio;
-import io.vov.vitamio.widget.MediaController;
 import io.vov.vitamio.widget.VideoView;
 
 /**
@@ -56,8 +55,6 @@ public class VideoViewActivity extends AppCompatActivity {
         getWindow().setBackgroundDrawableResource(android.R.color.black);
         // 设置当前内容视图
         setContentView(R.layout.activity_video_view);
-        // Vitamio初始化
-        Vitamio.isInitialized(this);
     }
 
     @Override public void onContentChanged() {
@@ -87,8 +84,10 @@ public class VideoViewActivity extends AppCompatActivity {
 
     private void initVideoView() {
         videoView = (VideoView) findViewById(R.id.videoView);
+        Vitamio.isInitialized(this);
         // 控制(暂停,播放,快进等)
-        videoView.setMediaController(new MediaController(this));
+//        videoView.setMediaController(new MediaController(this));
+        videoView.setMediaController(new CustomMediaController(this));
         videoView.setKeepScreenOn(true);
         videoView.requestFocus();
         // 资源准备监听处理
