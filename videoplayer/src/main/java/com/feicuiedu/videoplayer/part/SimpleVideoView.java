@@ -11,17 +11,18 @@ import io.vov.vitamio.Vitamio;
 
 /**
  * 一个自定义的VideoView,使用MediaPlayer+SurfaceView来实现视频的播放
- * <p>
+ * <p/>
  * MediaPlayer来做视频播放的控制，SurfaceView来显示视频
- * <p>
- * 实现简单的播放控制:在视频上放一个播放/暂停按钮，一个进度条和一个全屏按钮,和一个SurfaceView
- * <p>
+ * <p/>
+ * 视图方面将简单实现:放一个播放/暂停按钮，一个进度条,一个全屏按钮,和一个SurfaceView
+ * <p/>
  * 本API实现结构：
  * <ul>
  * <li/>提供setVideoPath方法(一定要在onResume方法调用前来调用): 设置播放谁
  * <li/>提供onResume方法(在activity的onResume来调用): 初始化MediaPlayer,准备MediaPlayer
  * <li/>提供onPause方法 (在activity的onPause来调用): 释放MediaPlayer,暂停mediaPlayer
  * </ul>
+ * <p/>
  * 作者：yuanchao on 2016/8/10 0010 16:52
  * 邮箱：yuanchao@feicuiedu.com
  */
