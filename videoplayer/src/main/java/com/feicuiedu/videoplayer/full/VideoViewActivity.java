@@ -14,14 +14,15 @@ import com.feicuiedu.videoplayer.R;
 import java.util.Locale;
 
 import io.vov.vitamio.MediaPlayer;
+import io.vov.vitamio.Vitamio;
 import io.vov.vitamio.widget.MediaController;
 import io.vov.vitamio.widget.VideoView;
 
 /**
  * 使用VideoView进行视频播放的Activity
- * <p/>
+ * <p>
  * 请使用open方法,传入视频path,启动些Activity
- * <p/>
+ * <p>
  * 作者：yuanchao on 2016/8/9 0009 15:47
  * 邮箱：yuanchao@feicuiedu.com
  */
@@ -55,6 +56,8 @@ public class VideoViewActivity extends AppCompatActivity {
         getWindow().setBackgroundDrawableResource(android.R.color.black);
         // 设置当前内容视图
         setContentView(R.layout.activity_video_view);
+        // Vitamio初始化
+        Vitamio.isInitialized(this);
     }
 
     @Override public void onContentChanged() {
