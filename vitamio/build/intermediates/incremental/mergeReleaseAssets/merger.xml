@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="D:\online_workspace\videonews\VideoNews\vitamio\src\main\assets"/></dataSet><dataSet config="release"><source path="D:\online_workspace\videonews\VideoNews\vitamio\src\release\assets"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="G:\WODEANZHUOCHENGXU\MyVideoNewsFix\vitamio\src\main\assets"/><source path="G:\WODEANZHUOCHENGXU\MyVideoNewsFix\vitamio\build\generated\assets\shaders\release"/></dataSet><dataSet config="release"><source path="G:\WODEANZHUOCHENGXU\MyVideoNewsFix\vitamio\src\release\assets"/></dataSet></merger>
